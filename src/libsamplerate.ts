@@ -71,10 +71,10 @@ function validate(
 	if (outputSampleRate === undefined) throw 'outputSampleRate is undefined';
 
 	if (nChannels < 1 || nChannels > 128) throw 'invalid nChannels submitted';
-	if (inputSampleRate < 1 || inputSampleRate > 192000)
-		throw 'invalid inputSampleRate';
-	if (outputSampleRate < 1 || outputSampleRate > 192000)
-		throw 'invalid outputSampleRate';
+	// if (inputSampleRate < 1 || inputSampleRate > 192000)
+	// 	throw 'invalid inputSampleRate';
+	// if (outputSampleRate < 1 || outputSampleRate > 192000)
+	// 	throw 'invalid outputSampleRate';
 	if (
 		cType < ConverterType.SRC_SINC_BEST_QUALITY ||
 		cType > ConverterType.SRC_LINEAR
